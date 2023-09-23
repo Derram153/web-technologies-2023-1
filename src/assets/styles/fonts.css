@@ -21,3 +21,23 @@
          url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/static/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/static/fonts/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/static/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/static/fonts/Poppins-BoldItalic.ttf") format("truetype");
+}

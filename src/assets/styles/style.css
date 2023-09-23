@@ -2,10 +2,85 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+body {
+    font-family: 'Poppins';
+}
+.parag {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
-.test {
-    color: red !important;
+.headline1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.headline2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.headline3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.headline4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.textinput {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit_button {
+    background: rgb(39,39,168);
+    background: linear-gradient(90deg, rgba(39,39,168,1) 33%, rgba(152,38,220,1) 96%);
+    box-shadow: 5px 20px 50px rgba((16), 112, 117, 0.2);
+    border-radius: 10px;
+    border-width: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.breadcrumb {
+    background: rgb(52,123,125);
+    background: linear-gradient(0deg, rgba(52,123,125,1) 0%, rgba(255,254,255,1) 100%);
+    list-style: none;
+    height: 19px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_ul {
+    list-style: none;
+}
+
+.nav_li {
+    display: inline-block;
+}
+
+
+.breadcrumb li {
+    display: inline-block;
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 4px;
+    color: black;
+}
+
+.breadcrumb li a {
+    color: black;
+    text-decoration: none;
 }

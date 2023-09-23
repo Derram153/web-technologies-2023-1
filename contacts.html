@@ -1,47 +1,55 @@
-<body>
+<head>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+</head>
+<body background="images/backgroung.avif">
     <header>
         <img src="images/logo.png" height=70px width=70px>
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html">Главная</a></li>
+                <li class="nav_li"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Главная</a></li>
+            <li>)</li>
+            <li>Контакты</li>
+        </ul>
     </header>
     <div>
-        <h2>Contact us</h2>
-        <p>Пожалуйста не надо &quot;Contact us&quot;. Вот вам собаку вместо этого.
+        <h2 class="headline2">Contact us</h2>
+        <p class="parag">Пожалуйста не надо &quot;Contact us&quot;. Вот вам собаку вместо этого.
         </p>
         <img src="images/doggo.png" width=375px height=187px>
-        <h4>Adress</h4>
-        <p>Нету, бездомные мы.
+        <h4 class="headline4">Adress</h4>
+        <p class="parag">Нету, бездомные мы.
         </p>
-        <h4>Phone</h4>
+        <h4 class="headline4">Phone</h4>
         <ul>
             <li>+7 (895) 456-45-78</li>
             <li>+7 (895) 456-45-78</li>
         </ul>
-        <h4>Online service</h4>
+        <h4 class="headline4">Online service</h4>
         <ul>
             <li><a href="index.html">Сайт</a></li>
             <li><a href="mailto:fhjsfks@gmail.com">Почта</a></li>
         </ul>
-        <p>Адресса нету | +7 (895) 456-45-78</p>
-        <h4>Send us message</h4>
+        <p class="parag">Адресса нету | +7 (895) 456-45-78</p>
+        <h4 class="headline4">Send us message</h4>
         <form>
             <label for="name">Full name</label>
-            <input id="name"><br>
+            <input class="textinput" id="name"><br>
             <label for="email">Email  </label>
-            <input id="email"><br>
+            <input class="textinput" id="email"><br>
             <label for="message">Message</label>
-            <textarea id="message"></textarea>
-            <p><input type="submit" value="submit"></p>
+            <textarea class="textinput" id="message"></textarea>
+            <p><input class="submit_button" type="submit" value="submit"></p>
         </form>
         <hr>
     </div>
     <footer>
-        <h3>Не начинайте войны</h3>
-        <p>Мы собачники любим собак, но есть кошатники и это их выбор. Не начиныйте споры на этой основе и просто любите друг друга и своих питомцев. &lt;3
+        <h3 class="headline3">Не начинайте войны</h3>
+        <p class="parag">Мы собачники любим собак, но есть кошатники и это их выбор. Не начиныйте споры на этой основе и просто любите друг друга и своих питомцев. &lt;3
         </p>
         <hr>
         <ul>
@@ -49,6 +57,6 @@
             <li>fhjsfks@gmail.com</li>
             <li>+7 (895) 456-45-78</li>
         </ul>
-        <p>Все права защищены</p>
+        <p class="parag">Все права защищены</p>
     </footer>
 </body>
