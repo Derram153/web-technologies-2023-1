@@ -40,6 +40,10 @@ body {
     opacity: 0.4;
 }
 
+.form_back {
+    background-image: url("images/backgroung.avif");
+}
+
 .submit_button {
     background: rgb(39,39,168);
     background: linear-gradient(90deg, rgba(39,39,168,1) 33%, rgba(152,38,220,1) 96%);
@@ -58,7 +62,7 @@ body {
     background: rgb(52,123,125);
     background: linear-gradient(0deg, rgba(52,123,125,1) 0%, rgba(255,254,255,1) 100%);
     list-style: none;
-    height: 19px;
+    height: 31px;
     padding: 0;
     margin: 0;
 }
@@ -75,9 +79,15 @@ body {
 .breadcrumb li {
     display: inline-block;
     margin: 0;
-    padding-top: 0px;
-    padding-left: 4px;
+    padding: 5px 8px 7px 2px;
     color: black;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    background: rgb(52,123,125);
+    background: linear-gradient(0deg, rgba(52,123,125,1) 0%, rgba(255,254,255,1) 100%);
+    border-width: 1px;
+    border-right-color: black;
+    border-right: solid;
 }
 
 .breadcrumb li a {
