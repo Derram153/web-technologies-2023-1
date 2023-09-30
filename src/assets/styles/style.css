@@ -9,3 +9,7 @@
 .test {
     color: red !important;
 }
+b {
+    color: blue;
+    font-weight: normal;
+}
