@@ -2,14 +2,157 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+header {
+    position: fixed;
+    width:  1124px;
+    padding: 16 24;
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px gray;
+    margin: 24px 0 24px 108px;
 }
 
-.test {
-    color: red !important;
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
 }
-b {
-    color: blue;
-    font-weight: normal;
+
+.header_list {
+    margin: 0;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_list li {
+    display: inline-flex;
+}
+
+.header_list li b {
+    font-size: 20px;
+    color: #2D66EE;
+}
+
+.nav_list li {
+    padding-right: 8px;
+}
+
+.contacts_list{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.contacts_list li {
+    padding-right: 8px;
+    color: #2D66EE;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 260px;
+}
+
+.footer {
+    height: 240px;
+    width:  1124px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101828;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px gray;
+    margin: -240px 0 0px 108px;
+    color: white;
+}
+
+.foot_head {
+    font-size: 24px;
+}
+
+.foot_img {
+    color: #98A2B3;
+    font-size: 14px;
+}
+
+.foot_info {
+    font-size: 17px;
+}
+
+.footer_contacts {
+    width: 100%;
+}
+
+.footer_contacts ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot_end {
+    font-size: 13px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0 auto;
+    background-color: bisque;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.container {
+    padding: 0 60px 0 110px;
+}
+
+
+
+.section1 {
+    background-color: #F2F4F7;
+    width: 100%;
+}
+
+.section1 b {
+    color: #306FF5;
+}
+
+.introduction {
+    padding-top: 120px;
+    padding-bottom: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_intro {
+    padding: 0 60px 0 110px;
+    width: 70%;
+}
+
+.container_intro h1 {
+    font-size: 36px;
+}
+
+.container_intro p {
+    font-size: 15px;
+}
+
+.container_intro legend {
+    font-size: 20;
+    font-weight: bold;
+}
+
+.phone_call {
+    background-color: white;
+    padding: 24px 24px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px gray;
+    display: flex;
+    
 }

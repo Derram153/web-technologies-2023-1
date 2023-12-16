@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <ul class="header_list">
             <li><b>IT WEBSITE</b></li>
             <li><ul class="nav_list">
@@ -16,24 +16,27 @@
                 <li><img src="src/assets/img/smartphone_outline_24.png" height="24" width="24"></li>
                 <li>+7 (111) 111 11 11</li>
                 <li>+7 (111) 111 11 11</li>
+            </ul></li>
+            <li><ul class="contacts_list">
                 <li><img src="src/assets/img/mail_outline_24.png" height="24" width="24"></li>
                 <li>itcompany@mail.com</li>
             </ul></li>
         </ul>
     </header>
+    <div class="content">
     <section class="section1">
         <div class="introduction">
-            <div class="container">
+            <div class="container_intro">
                 <h1>Development of <b>mobile applications</b> and <b>web services</b> of any complexity</h1>
                 <p>We create applications for iOS, android that transfer your business to mobile applications of your customer's devices
                 </p>
             </div>
-            <div class="container">
-                <h2>Leave your contacts and we will call you back within 30 minutes</h2>
+            <div class="container_intro">
                 <form class="phone_call">
-                    <label for="phone">Phone number</label><br>
-                    <input type="text" id="phone" name="phone" value="+7 "><br>
-                    <label for="name">Full name</label><br>
+                    <legend>Leave your contacts and we will call you back within 30 minutes</legend><br>
+                    <label for="phone">Phone number</label>
+                    <input type="text" id="phone" name="phone" value="+7 ">
+                    <label for="name">Full name</label>
                     <input type="text" id="name" name="name">
                     <input type="submit" value="Get consultation">
                 </form>
@@ -91,8 +94,6 @@
                     <p><img src="src/assets/img/place_outline_24.png" height="24" width="24"> Kazakhstan 
                         <img src="src/assets/img/work_outline_24.png" height="24" width="24">Medicine</p>
                 </div>
-            </div>
-        </div>
     </section>
     <section class="section4">
         <div>
@@ -198,28 +199,29 @@
             </div>
         </div>
     </section>
+</div>
     <footer class="footer">
-        <p>IT WEBSITE</p>
+        <p class="foot_head">IT WEBSITE</p>
         <div class="footer_contacts">
             <ul>
                 <li><div>
-                    <p><img src="src/assets/img/mail_outline_24_foot.png" height="24" width="24">Contact nums</p>
-                    <p>+7 (778) 395 90 26</p>
+                    <p class="foot_img"><img src="src/assets/img/smartphone_outline_24_foot.png" height="24" width="24">Contact nums</p>
+                    <p class="foot_info">+7 (778) 395 90 26</p>
                 </div></li>
                 <li><div>
-                    <p><img src="src/assets/img/mail_outline_24_foot.png" height="24" width="24">Post</p>
-                    <p>mail@mail.com</p>
+                    <p class="foot_img"><img src="src/assets/img/mail_outline_24_foot.png" height="24" width="24">Post</p>
+                    <p class="foot_info">mail@mail.com</p>
                 </div></li>
                 <li><div>
-                    <p><img src="src/assets/img/place_outline_24_foot.png" height="24" width="24">Adress</p>
-                    <p>City city, street st. 90</p>
+                    <p class="foot_img"><img src="src/assets/img/place_outline_24_foot.png" height="24" width="24">Adress</p>
+                    <p class="foot_info">City city, street st. 90</p>
                 </div></li>
                 <li><div>
-                    <p><img src="src/assets/img/document_outline_24_foot.png" height="24" width="24">Leave a request</p>
-                    <p>Leave a request</p>
+                    <p class="foot_img"><img src="src/assets/img/document_outline_24_foot.png" height="24" width="24">Leave a request</p>
+                    <p class="foot_info">Leave a request</p>
                 </div></li>
             </ul>
         </div>
-        <p><img src="src/assets/img/footer_logo.png"> We work throughout world</p>
+        <p class="foot_end"><img src="src/assets/img/footer_logo.png"> We work throughout world</p>
     </footer>
 </body>
