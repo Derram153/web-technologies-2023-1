@@ -16,7 +16,7 @@ body {
     margin: 0 0;
     /*background-color: bisque;*/
     min-width: 320px;
-    max-width: 1440px;
+    /*max-width: 1440px;*/
 }
 
 header {
@@ -69,6 +69,7 @@ header b {
 
 .nav_list a:hover {
     text-decoration: underline blue;
+    cursor: pointer;
 }
 
 #checkbox_toggle {
@@ -114,45 +115,23 @@ header b {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .header_list {
-        display: none;
-        max-height: 0;
-        overflow: hidden;
-        position: absolute;
-        background-color: white;
-        text-align: center;
-        right: 0;
-        left: 0;
-        margin-top: 100px;
-    }
-    .header_list{
-        display: flex;
-    }
-    .header_list li a {
-        padding: 10px;
-    }
-    .hamburger {
-        display: block;
-        padding: 20px 0;
-    }
-    #checkbox_toggle:checked ~ .header_list {
-        display: flex;
-        flex-direction: column;
-        max-height: 100%;
-        height: 1000px;
-    }
-    .header_list li {
-        display: inline;
+.mail {
+    display: none;
+}
 
-    }
-    header {
-        flex-direction:  row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
+.footer {
+    flex: 0 0 auto;
+    height: 240px;
+    width:  80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101828;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px gray;
+    margin: -240px 0 0px 108px;
+    color: white;
+    grid-column: 1/13;
 }
 
 .contacts_list{
@@ -172,21 +151,6 @@ header b {
     min-height: 100%;
     padding-bottom: 260px;
     
-}
-
-.footer {
-    flex: 0 0 auto;
-    height: 240px;
-    width:  80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #101828;
-    border-radius: 16px;
-    box-shadow: 4px 4px 8px gray;
-    margin: -240px 0 0px 108px;
-    color: white;
-    grid-column: 1/13;
 }
 
 .foot_head {
@@ -220,9 +184,7 @@ header b {
     padding: 0 60px 0 110px;
 }
 
-
-
-.section1 {
+.section_introduction {
     background-color: #F2F4F7;
     width: 100%;
     display: grid;
@@ -230,7 +192,7 @@ header b {
     
 }
 
-.section1 b {
+.section_introduction b {
     color: #306FF5;
 }
 
@@ -291,7 +253,7 @@ header b {
     border-bottom: 1px solid #98A2B3;
 }
 
-.section2 {
+.section_development {
     background-color: white;
     width: 100%;
     display: grid;
@@ -335,8 +297,127 @@ header b {
 
 .container_cycle a:hover {
     text-decoration: underline blue;
+    cursor: pointer;
 }
 
 .container_cycle li {
     padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 0 0 !important;
+        width: 100%;
+        max-width: 768px;
+    }
+    .footer {
+        margin: -200px 0 0 0    ;
+        width: 100%;
+    }
+    .header_list {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 100px;
+    }
+    .mail {
+        display: flex;
+        color: #2D66EE;
+        align-content: center;
+    }
+    .mail img {
+        padding-right: 4px;
+    }
+    .nav_mail {
+        display: block;
+    }
+    .header_list{
+        display: flex;
+    }
+    .header_list li a {
+        padding: 10px;
+        cursor: pointer;    
+    }
+    .hamburger {
+        display: block;
+        padding: 20px 0;
+    }
+    #checkbox_toggle:checked ~ .header_list {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+    }
+    .header_list li {
+        display: inline;
+
+    }
+    header {
+        flex-direction:  row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container {
+        padding: 0 15px 0 30px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header_list {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin-top: 100px;
+    }
+    .container_cycle {
+        grid-column: 1/2;
+    }
+    .header_list{
+        display: flex;
+    }
+    .header_list li a {
+        padding: 10px;
+        cursor: pointer;
+    }
+    header b {
+        justify-self: center;
+    }
+    .hamburger {
+        display: block;
+        padding: 20px 0;
+        justify-self: right;
+    }
+    #checkbox_toggle:checked ~ .header_list {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        height: 1000px;
+    }
+    .header_list li {
+        display: inline;
+
+    }
+    header {
+        flex-direction:  row-reverse;
+        align-items: center;
+    }
+    .mail {
+        display: none !important;
+    }
+    .container_intro {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        max-width: 425px;
+    }
 }
