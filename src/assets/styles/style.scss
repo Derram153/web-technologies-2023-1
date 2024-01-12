@@ -1,8 +1,10 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import "./fonts";
 
 
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
 
 .wrapper {
     display: flex;
