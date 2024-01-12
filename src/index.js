@@ -75,22 +75,40 @@ console.log(lookForNumbers([2,7,11,15], 9));
 
 
 function longPrefix (strs) {
-    len = strs.length;
-    pref = strs[0];
-    for (let i = 1; i < len; i++){
-        word = strs[i];
-        while (word.indexOf(pref) != 0) {
-            pref = pref.substring(0, pref.length - 1);
-            if (pref == "") {
-                return "";
+    res = strs[0];
+    biggest = "";
+    
+    for (let i = 1; i < strs.length; i++){
+        bigCount = 0
+        bigPos = 0;
+        for (let j = 0; j < res.length; j++){
+            count = 0
+            for (let z = j; z <= res.length; z++){
+                pos = strs[i].search(res.substring(j,z));
+                ser = strs[i].substring(pos, z);
+                //console.log(ser, j, z, pos, res.substring(j,z), strs[i], count, bigCount, bigPos);
+                if (pos > 0){
+                    count++;
+                    if (count > bigCount){
+                        bigCount = count;
+                        bigPos = pos;
+                    }
+                }
+                if (pos <=0 & count < bigCount){
+                    count = 0;
+
+                }
             }
         }
+        biggest = strs[i].substring(bigPos,bigPos + bigCount);
+        //console.log(res);
+        res = biggest;
+        //console.log(res);
     }
+    return res;
 }
 
 console.log(longPrefix(["цветок","поток","хлопок"]));
 
 
 console.log(longPrefix(["собака","гоночная машина","машина"]));
-
-
